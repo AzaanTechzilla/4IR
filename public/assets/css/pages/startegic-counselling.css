@@ -1,0 +1,396 @@
+.container {
+    margin-top: 3rem;
+}
+
+/* @media screen and (min-width:1200px) {
+    .offers_container:has(:hover) > :not(:hover) {
+    opacity: 0.6;
+    scale: .8;
+}
+} */
+
+/* Default styles for larger screens */
+.offer_box {
+    border: 2px solid grey;
+    transition: .5s all ease;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0px rgba(0, 189, 255, 1);
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1.7rem;
+    margin: 3rem 0;
+}
+
+.offer_box:hover {
+    border-color: rgba(0, 189, 255, 1);
+    box-shadow: 0 0 10px 4px rgba(0, 189, 255, 1);
+}
+
+.offer_box .offer_img {
+    z-index: -10;
+}
+
+.offer_box img {
+    width: 80%;
+    height: auto;
+}
+
+.offer_box .offer_content {
+    width: 100%;
+}
+
+.offer_box .offer_content h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.offer_box .offer_content p {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.7;
+    font-weight: 100;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
+    #logo-img{
+        width:180px !important;
+    }
+    .offer_box {
+        flex-direction: column !important;
+        gap: 1rem;
+        padding: 1.7rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .offer_box img {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .offer_box .offer_content h3 {
+        font-size: 1.8rem;
+    }
+
+    .offer_box .offer_content p {
+        font-size: 1.1rem;
+    }
+    .home-sec{
+        padding-left: 52px !important;
+    }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 480px) {
+    .offer_box {
+        flex-direction: column ;
+        padding: 1.3rem;
+        display: block;
+        gap: 1rem;
+    }
+    .offer_box img {
+      display: none;
+    }
+    .home-sec{
+        padding-left: unset !important;
+    }
+
+    .offer_box1{
+        display: flex;
+        flex-direction: column-reverse !important ;
+        padding: 1.3rem;
+   
+        gap: 1rem;
+    }
+
+    .offer_box img {
+        width: 100%;
+    }
+
+    .offer_box .offer_content h3 {
+        font-size: 1.5rem;
+    }
+
+    .offer_box .offer_content p {
+        font-size: 1rem;
+    }
+    .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {
+display: flex;
+/* flex-direction: column; */
+width: 100% !important;
+    }
+    .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .wrapperswiper {
+display: flex;
+flex-direction: column;
+width: 100% !important;
+    }
+    .home-sec{
+        margin-left: -28px !important;
+    }
+    .boxs_container {
+        gap: 2rem !important;
+      }
+}
+
+
+.dropdown-arrow {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.dropdown-arrow::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    color: rgba(0, 189, 255, 1);
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+@media (max-width: 1199px) {
+    .nav-item.dropdown {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-item.dropdown .nav-link {
+        flex: 1;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+        width: 100%;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+    }
+}
+
+.navbar-nav .nav-item {
+    position: relative;
+}
+
+header #logo-img {
+    position: relative;
+    margin-top: -1.4rem;
+}
+
+@media screen and (max-width:600px) {
+    header #logo-img {
+        margin-top: 0;
+    }
+}
+.home-sec{
+    margin-left: -28px !important;
+}
+
+@media screen and (min-width:1024px) {
+    #logo-img{
+        width:180px !important;
+    }
+    .aitalk-heading{
+        margin-left: 10px !important;
+    }
+    .home-section .home-content .mic_text{
+        /* margin-left: 23rem !important; */
+    }
+    .aboutbox-conatiner{
+        margin-left: -4px !important;
+    }
+}
+@media screen and (max-width:1588px) {
+    .home-section .home-content .mic_text{
+        /* margin-left: 30rem !important; */
+    }
+    .aitalkassist .home-content{
+        position: relative;
+        left: 0% !important;
+    }
+}
+@media screen and (min-width:1400px) and (max-width:1700) {
+    .home-content1{
+        position:relative !important; 
+    }
+    .home-sec{
+         padding-left: 242px !important; 
+    }
+    .home-content .aitalk-heading .mic_text{
+        left: 0px !important;
+      }
+
+}
+@media screen and (max-width:3280px) {
+    .home-section .home-content .mic_text{
+        /* margin-left: 30rem !important; */
+    }
+    .aitalkassist .home-content{
+        position: relative;
+        left: 0% !important;
+    }
+    
+}
+@media screen and (max-width:540px) {
+    .home-content{
+      position: relative !important;
+      top: unset;
+    }
+    .home-content .mic_text{
+      position: absolute !important;
+      left: unset !important;
+
+  
+    }
+  }
+
+@media screen and (max-width:994px) {
+    .home-section .home-content .mic_text{
+        /* margin-left: 13rem !important; */
+    }
+    .aitalkassist .home-content{
+        position: relative;
+        left: 15% !important;
+        /* top: -6%; */
+        /* width: auto !important; */
+    }
+    .home-content .mic_text{
+        position: relative !important;
+        /* left: 50% !important; */
+    
+      }
+      .boxs_container {
+        gap: 2rem !important;
+      }
+      .home-content .aitalk-heading .mic_text{
+        left: 0px !important;
+      }
+      .ai-feature-box-wrapper {
+        margin: 0px !important;
+    }
+    }
+
+@media screen and (max-width:768px) {
+   
+    .aitalkassist .home-content {
+        left: unset !important;
+        /* top: unset !important; */
+        /* width: 100% !important; */
+    }
+    .home-content .aitalk-heading {
+        position: relative;
+        left: unset !important;
+        margin-left: 0px !important;
+    }
+    .service-section .service-info p {
+        text-align: left !important;
+    }
+    #logo-img{
+        width:150px !important;
+    }
+}
+@media  screen and (max-width: 600px) {
+    .home-content .aitalk-heading h1{
+        position: relative !important;
+        left: unset !important;
+        margin: 0px !important;
+
+    }
+    .home-content .aitalk-heading{
+        position: relative !important;
+        left: unset !important;
+        margin: 0px !important;
+    }
+    .boxs_container .box{
+        max-width: 100% !important;
+
+    }
+    .container {
+        padding-left: 10px ;
+        padding-right: 10px ;
+    }
+    .boxs_container .box {
+        left: unset !important;
+    }
+    .boxs_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px !important;
+    }
+}
+@media (max-width: 480px) {
+    .boxs_container  .boxcustom {
+      max-width: 88% !important;
+      left: 0% !important;
+  }
+  .home-section .home-content .mic_text{
+    margin-top: 20px;
+  }
+  .ai-features-heading {
+    padding: 0px 10px !important;
+  }
+  .services .services_section .container{
+    margin: unset !important;
+  }
+    .feature_container{
+        margin-left: 0px !important;
+    }
+    .team-section .team-box{
+        margin: 0px !important;
+    }
+    .services_section .container{
+        padding: 0px !important;
+    }
+    .ai-feature-box-wrapper{
+        margin: 0px !important;
+    }
+    .ai-feature-box {
+        margin: 0px !important;
+    }
+  }
+.modal-content {
+    height: 90vh;
+    max-height: 90vh;
+    background-color: #0a0e17;
+    animation: shadow 2s infinite ease-in-out;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 10px 5px #00BDFF;
+    }
+
+    50% {
+        box-shadow: 0 0 20px 10px #00BDFF;
+    }
+
+    100% {
+        box-shadow: 0 0 10px 5px #00BDFF;
+    }
+}
+
+.modal-dialog {
+    width: 80vw;
+    max-width: 90vw;
+}
+
+@media screen and (max-width:580px) {
+    .modal-content {
+        position: relative !important;
+        left: 10% !important;
+        overflow: scroll;
+    }
+}

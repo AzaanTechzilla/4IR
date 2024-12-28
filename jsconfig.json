@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/Landingcomponent/*": ["./src/app/Componenets/landing/*"],
+      "@/landingimage/*": ["./public/assets/landingimage/*"]
     }
   }
 }

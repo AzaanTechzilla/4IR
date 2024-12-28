@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #00bdff;
+  --secondary: #bb46ff;
+  --whitecolor: #ffffff;
+  --text: #9c9d9f;
+  --accent: #000000;
+  --backgorund: #0a101c;
+  --border: #3c3e46;
+  --card-shadowcolor: #00bdff40;
+  --accordian-color: #12202a;
+  --accordian-body-color: #090e19;
+  --card-background-color: #02060f;
+  /* global font  */
+  --font-play: "Play", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-instrument: "Instrument ", sans-serif;
+}
+
+body {
+  background-color: var(--backgorund) !important;
+  position: relative;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+figure{
+  margin: 0 !important;
+}
+/* Typo */
+
+h1 {
+  font-family: var(--font-instrument);
+  font-weight: 700;
+  font-size: 4.2rem !important;
+  font-weight: 400 !important;
+  line-height: 5rem !important;
+  color: var(--whitecolor) !important;
+}
+
+h2 {
+  font-family: var(--font-instrument);
+  font-size: 3.7rem !important;
+  font-weight: 400 !important;
+  line-height: 4.9rem !important;
+  color: var(--whitecolor) !important;
+}
+
+h3 {
+  font-family: var(--font-instrument);
+  line-height: 3.3rem;
+  font-size: 72px;
+  font-weight: 500 !important;
+  color: var(--whitecolor) !important;
+}
+
+h4 {
+  font-family: var(--font-instrument);
+  font-size: 2.9rem !important;
+  line-height: 3.4rem !important;
+  word-spacing: 2px;
+  font-weight: 500;
+  color: var(--whitecolor) !important;
+}
+
+h5 {
+  font-family: var(--font-instrument);
+  font-size: 2.5rem !important;
+  line-height: 3.4rem !important;
+  font-weight: 500;
+  color: var(--whitecolor) !important;
+}
+
+h6 {
+  font-family: var(--font-instrument);
+  font-size: 2.1rem !important;
+  font-weight: 600;
+  color: var(--whitecolor) !important;
+}
+
+p {
+  font-size: 1.7rem;
+  font-family: var(--font-roboto);
+  color: var(--text) !important;
+  line-height: 2.5rem;
+  margin: 0px !important;
+}
+
+/* Button */
+.btn-1 {
+  color: var(--whitecolor);
+  padding: 14px 48px;
+  border: 1px solid #8700ff;
+  border-radius: 15px;
+  background: radial-gradient(50% 136.52% at 50% 50%, #8700ff 0%, #510099 100%);
+  font-size: 18px;
+  padding: 13px 66px;
+  font-weight: 500;
+}
+
+.btn-1:hover {
+  box-shadow: 0px 4px 73.2px 0px #042a94;
+}
+
+.btn-2 {
+  color: var(--whitecolor);
+  background-color: transparent;
+  border: 4px solid #00bdff;
+  font-size: 20px;
+  padding: 5px 20px;
+  box-shadow: 0px 2px 22.5px 0px #00f2ff42;
+  border-radius: 50px;
+  font-weight: 400 !important;
+  z-index: 2 !important;
+}
+
+.btn-2:hover {
+  background: radial-gradient(
+    79.65% 290.01% at 20.35% 35.82%,
+    #00bdff 0%,
+    #8800ff 100%
+  );
+  transition: all.3s;
+}
+
+.customborder {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+.primaryborder {
+  border: 1px solid var(--primary);
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 1400px) {
+  p{
+    font-size: 1.3rem !important;
+    line-height: 36px;
+  }
+  .bannerSpan {
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 1399px) {
+  h1 {
+    font-size: 46px !important;
+    line-height: 60px !important;
+  }
+  h6 {
+    font-size: 1.8rem !important;
+    line-height: 2.4rem !important;
+  }
+
+  p {
+    font-size: 1.2rem !important;
+    line-height: 1.9rem !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 36px !important;
+    font-weight: 400 !important;
+    line-height: 48px !important;
+  }
+
+  h4 {
+    font-size: 34px !important;
+    line-height: 2.4rem !important;
+  }
+
+  h5 {
+    font-size: 1.8rem !important;
+    line-height: 3.4rem !important;
+  }
+
+  h6 {
+    font-size: 1.6rem !important;
+    line-height: 2rem !important;
+  }
+
+  p {
+    font-size: 15px !important;
+    line-height: 25px !important;
+  }
+
+  .btn-1 {
+    font-size: 16px ;
+  }
+  h2 {
+    font-size: 50px !important;
+    line-height: 60px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 32px !important;
+    line-height: 44px !important;
+  }
+  h2 {
+    font-size: 32px !important;
+  }
+
+  h4 {
+    font-size: 28px !important;
+    line-height: 2rem !important;
+  }
+
+  h5 {
+    font-size: 1.3rem !important;
+    line-height: 3.4rem !important;
+  }
+
+  h6 {
+    font-size: 1.3rem !important;
+    line-height: 2rem !important;
+  }
+
+  p {
+    font-size: 14px !important;
+    line-height: 1.5rem !important;
+  }
+
+  .btn-1 {
+    font-size: 14px !important;
+    padding: 13px 66px 13px 66px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 38px !important;
+    line-height: 42px !important;
+  }
+
+  h4 {
+    font-size: 24px !important;
+    line-height: 1.5rem !important;
+  }
+
+  h5 {
+    font-size: 16px !important;
+    line-height: 3.4rem !important;
+  }
+
+  h6 {
+    font-size: 12px !important;
+    line-height: 48px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+
+  .bannerpara {
+    /* padding: 100px 0px !important; */
+    font-size: 10px !important;
+    line-height: 16px !important;
+  }
+
+  .btn-1 {
+    font-size: 18px !important;
+    padding: 12px 22px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 24px !important;
+    font-weight: 400 !important;
+  }
+  h2 {
+    font-size: 22px !important;
+  }
+  h3 {
+    font-size: 22px !important;
+    line-height: normal !important;
+  }
+
+  h4 {
+    font-size: 18px !important;
+    line-height: 1.2rem !important;
+  }
+
+  h5 {
+    font-size: 12px !important;
+    line-height: 2.1rem !important;
+  }
+
+  h6 {
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+
+  p {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
+
+  .btn-1 {
+    font-size: 13px !important;
+    padding: 8px 18px !important;
+  }
+}

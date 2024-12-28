@@ -1,0 +1,1510 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.banner-content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banenr-wrapper {
+  position: relative;
+  overflow: hidden !important;
+}
+
+.primary {
+  color: red;
+}
+
+.banner-logo img {
+  width :100% !important;
+  height :auto !important;
+  margin-bottom: 37px !important;
+}
+
+.banner-heading-top {
+  position: relative;
+  background: #6e6e6e26;
+  border-radius: 50px;
+  z-index: 1;
+  overflow: hidden;
+  margin-bottom: 25px;
+  width: 40%;
+  text-align: center;
+}
+
+.banner-heading-top p {
+  padding: 10px 10px;
+  font-size: 18px;
+  color: rgb(173, 173, 173);
+  border-radius: 50px;
+}
+
+.banner-heading-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(91.66deg, #00bdff -2.97%, #2a378f 103.23%);
+  border-radius: 50px;
+  padding: 1px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+.banner-second-heading h1 {
+  color: white;
+  font-weight: 500 !important;
+  line-height: 100px !important;
+  font-size: 96px !important;
+  margin-bottom: 20px;
+}
+
+.banner-second-heading {
+  width: 80%;
+}
+
+.banner-second-heading h1 span {
+  color: transparent;
+  background: linear-gradient(258deg, #8800ff 27.99%, #00bdff 57.37%);
+  background-clip: text;
+}
+
+.banner-second-heading p {
+  font-size: 22px !important;
+  line-height: 25px;
+  margin-bottom: 50px !important;
+}
+
+.banner-second-heading .btn-2 {
+  font-size: 24px !important;
+  padding: 12px 50px !important;
+}
+
+.banner-second-heading h6 {
+  font-size: 32px !important;
+  margin-bottom: 50px;
+}
+.youtube-video-main{
+  margin: 60px 0px ;
+}
+.youtube-video-video {
+    width: 70%;
+    margin: 0px auto;
+    height: auto;
+    border: 1px solid var(--primary);
+    border-radius:11px;
+  }
+  
+  .youtube-video img {
+    border-radius: 12px;
+  }
+  
+  .youtube-video iframe {
+  /* border: 1px solid var(--primary); */
+  border-radius: 12px;
+}
+
+.leads-upper-content {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.leads-upper-content .banner-heading-top {
+  margin: 0 auto;
+}
+
+.leads-upper-content h2 {
+  line-height: 70px;
+  padding-top: 30px;
+}
+
+.leads-lower-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.leads-lower-content .card {
+  background: linear-gradient(178.34deg,
+      rgba(102, 102, 102, 0.16) 1.76%,
+      rgba(0, 0, 0, 0.16) 98.95%);
+  width: 30%;
+  border: 1px solid rgba(40, 40, 40, 1);
+  border-radius: 18px;
+  transition: 0.3s all ease;
+}
+
+.leads-lower-content h5 {
+  font-size: 26px !important;
+  font-weight: 500;
+  line-height: 34px !important;
+  text-align: left;
+}
+
+.leads-lower-content p {
+  font-size: 20px !important;
+  font-weight: 400;
+  line-height: 28px !important;
+  text-align: left;
+}
+
+.leads-lower-content img {
+  width: 70%;
+}
+
+.img-card {
+  text-align: center;
+  display: inline-block;
+  background: rgba(0, 189, 255, 1);
+  border-radius: 50px;
+  padding: 17px 8px;
+  width: 25%;
+  margin-bottom: 20px;
+}
+
+.strugling-lower-content .card4-body {
+  width: 49%;
+  padding: 30px 20px;
+  min-height: 180px;
+}
+
+.strugling-lower-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 93%;
+  margin: 0 auto;
+}
+
+.leads-lower-content .card-body {
+  text-align: left;
+}
+
+.lower-content {
+  padding-right: 10%;
+}
+
+.leads-lower-content .card:hover {
+  border: 1px solid rgba(0, 189, 255, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.section3-heading-top {
+  position: relative;
+  background: #6e6e6e26;
+  border-radius: 50px;
+  z-index: 1;
+  overflow: hidden;
+  margin-bottom: 25px;
+  width: 45%;
+  text-align: center;
+}
+
+.strugling-content {
+  margin-top: 80px;
+}
+
+.strugling-content h2 {
+  margin: 20px 0px;
+  font-size: 50px !important;
+  font-weight: bold !important;
+}
+
+.strugling-para2 {
+  padding: 0px 280px !important;
+  line-height: 30px !important;
+  margin-bottom: 50px !important;
+}
+
+.strugling-lower-content {
+  margin-top: 80px;
+}
+
+.future-wrapper {
+  margin: 20px 0px;
+}
+
+.aifuturecard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.aifuturecard .card3 {
+  margin-top: 0px !important;
+  min-height: 30vh;
+  border-radius: 10px !important;
+  padding: 20px !important;
+  background: #00000021;
+}
+
+.aifuturecard .card3:hover {
+  background: linear-gradient(180.11deg, #1B2C4A 0.09%, #0F64DF 210.44%);
+  transition: all.5s !important;
+}
+
+.Salesaicards {
+  width: 300px !important;
+}
+
+.aiPoweredIndustries{
+  padding:20px 0px;
+}
+.aiPoweredIndustries-content h2 {
+  width: 70%;
+  line-height: 65px !important;
+  margin-bottom: 30px;
+}
+
+.aiPoweredIndustries-content p {
+  width: 50%;
+  line-height: 30px !important;
+  margin-bottom: 50px !important;
+}
+
+.aiPoweredIndustries-card {
+  min-width: 350px;
+  min-height: 250px;
+  border-radius: 8px;
+  background: #00000021 !important;
+  border: 2px solid #222222;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aiPoweredIndustries-card2 {
+  min-width: 41.4%;
+  min-height: 250px;
+  border-radius: 8px;
+  background: #00000021 !important;
+  border: 2px solid #222222;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aiPoweredIndustries-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+.card-content h3{
+  font-size: 30px !important;
+}
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-image {
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.card-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease;
+}
+
+.modal-dialog {
+  width: 80vw;
+  margin: 100px auto;
+}
+
+.modal-content {
+  min-height: 89vh;
+  background-color: #1e293e !important;
+  box-shadow: 15px 17px 37px -4px lightgray !important;
+}
+
+.model-header {
+  background-color: red !important;
+}
+
+.aiPoweredIndustries-card:hover .card-details {
+  opacity: 1;
+}
+
+.card:hover .card-image {
+  opacity: 0;
+}
+
+.card-details h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.card-details p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.testimonial-wrapper {
+  margin: 100px 0px;
+}
+
+.testimonial-heading {
+  padding: 0px 90px;
+}
+
+.question-heaing p {
+  padding: 15px 30px;
+}
+
+.question-heaing button {
+  margin: 40px 0px;
+}
+
+.classNamehead:active .leadgensidebar p {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 28px !important;
+  padding-top: 20px;
+}
+
+.accordion-item .arrow:focus-within {
+  background-color: var(--primary) !important;
+}
+
+.arrow {
+  border: 1px solid #fff;
+  padding: 4px 8px;
+  min-height: 20px !important;
+  background-color: var(--backgorund) !important;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.accordion-item:nth-child(1) {
+  background: none !important;
+  border: 2px solid var(--border) !important;
+  border-radius: 10px;
+}
+
+.accordion-item:nth-child(2) {
+  background: none !important;
+}
+
+.accordion-item:nth-child(3) {
+  background: none !important;
+}
+
+.accordion-item:nth-child(4) {
+  background: none !important;
+}
+
+.accordion-item:focus-within h3 {
+  color: var(--primary) !important;
+}
+
+.accordion-item:nth-child(1)>.accordion-header .accordion-button {
+  border-radius: 10px !important;
+  padding: 15px !important;
+}
+
+.accordion-item:nth-child(2)>.accordion-header .accordion-button {
+  border-radius: 10px !important;
+  padding: 15px !important;
+}
+
+.accordion-item:nth-child(3)>.accordion-header .accordion-button {
+  border-radius: 10px !important;
+  padding: 15px !important;
+}
+
+.accordion-item:nth-child(4)>.accordion-header .accordion-button {
+  border-radius: 10px !important;
+  padding: 15px !important;
+}
+
+.accordion-button h3 {
+  margin: 0px !important;
+}
+
+.accordion-body h5 {
+  padding: 30px !important;
+}
+
+.leadSidebar {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.custom-slide {
+  width: 28% !important;
+}
+
+.timeline-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-body{
+  width: 90%;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  height: 40px !important;
+  border-radius: 50%;
+  background-color: #00BDFF;
+  background: linear-gradient(355.66deg, #9A0FDF -22.64%, #0F64DF 96.47%);
+}
+.number-span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backgorund) !important;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+}
+
+
+.timeline-content {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.timeline-left {
+  width: 40% !important;
+}
+
+.timeline-right {
+  width: 60% !important;
+}
+.timeline-right-content{
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link.active::before {
+  background-color: #007bff;
+}
+
+.nav-link {
+  background: #00000021;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  width: 360px;
+  padding: 15px !important;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-color: rgba(0, 0, 0, 1);
+  border: 2px solid rgba(38, 38, 38, 1);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.nav-link:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: calc(50% + 14px);
+  bottom: -50%;
+  width: 2px;
+  background: repeating-linear-gradient(to bottom,
+      rgba(52, 55, 59, 0.61),
+      rgba(52, 55, 59, 0.61) 4px,
+      transparent 4px,
+      transparent 8px);
+  z-index: 1;
+}
+
+.nav-link.active {
+  background: linear-gradient(92.14deg, #00BDFF -16.62%, #8800FF 98.02%);
+  color: black;
+}
+
+.client-height1 {
+  padding: 0px !important;
+  margin: 0 !important;
+}
+.swiper-wrapper {
+  padding: 50px 0px;
+}
+
+.Client-mainbox {
+  padding: 90px 60px;
+}
+
+.clientbox {
+  background-color: #12243D;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.client-heading h5 {
+  font-size: 60px !important;
+  font-weight: bold !important;
+}
+
+.client-heading p {
+  font-size: 24px !important;
+}
+
+.clientcontent1 {
+  width: 160px;
+}
+
+.client-custombox {
+  width: 500px;
+}
+
+.clent-para1 {
+  font-size: 19px !important;
+  line-height: 28px;
+
+}
+
+.clent-para2 {
+  font-size: 15px !important;
+  line-height: 28px;
+}
+
+.pics-div {
+  padding-bottom: 20px;
+}
+
+.swiper-slide-prev {
+  border-radius: 5px !important;
+}
+
+/* animation  */
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 1.5s all ease;
+  opacity: 1;
+}
+
+.line-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.07);
+  margin-bottom: 5px;
+}
+/* .animated .lines {
+  opacity: 1;
+} */
+
+.animated-line {
+  width: 150px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(10, 16, 28, 0.58) -100.67%, rgba(187, 70, 255, 0.90) 100%);
+  animation: moveLine 3s linear infinite;
+}
+
+@keyframes moveLine {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.line-container:nth-child(1) { 
+  position: absolute;
+  top: 0%;
+  left: 0;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.line-container:nth-child(2) {
+  position: absolute;
+  top: 0%;
+  left: 4.5%;
+  -webkit-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+
+.line-container:nth-child(3) {
+  position: absolute;
+  top: 0%;
+  right: 4.5%;
+  -webkit-transform: rotate(105deg);
+  transform: rotate(105deg);
+}
+
+.line-container:nth-child(4) {
+  position: absolute;
+  top: 0%;
+  left: 9.5%;
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+.line-container:nth-child(5) {
+  position: absolute;
+  top: 0%;
+  right: 9.5%;
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+.line-container:nth-child(6) {
+  position: absolute;
+  top: 0%;
+  left: 15.8%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.line-container:nth-child(7) {
+  position: absolute;
+  top: 0%;
+  right: 15.8%;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.line-container:nth-child(8) {
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  overflow: hidden;
+}
+
+.line-container:nth-child(9) {
+  position: absolute;
+  transform: rotate(140deg);
+  top: 0%;
+  right: 26%;
+  overflow: hidden;
+  min-width: fit-content;
+}
+.leads-upper-content h2{
+font-size: 3rem !important;
+line-height: 52px !important;
+}
+.testimonial-heading h2{
+  font-size: 3.1rem !important;
+  line-height: 57px !important;
+}
+@media screen and (min-width: 1400px) {
+  .banner-logo-1{
+    margin-top : 30px !important;
+  }
+  .banner-content {
+    min-height: 100vh !important;
+  }
+
+  .aifuturecard .card3 {
+    min-height: 10vh;
+  }
+
+  .img-card {
+    padding: 15px 8px !important;
+    width: 19% !important;
+  }
+
+  .leads-upper-content {
+    width: 70%;
+  }
+  .timeline-wrapper{
+    margin-top: 80px;
+  }
+  .timeline-left {
+    width: 40% !important;
+    margin-right: 20px;
+  }
+
+  .timeline-right {
+    width: 60% !important;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 10px !important;
+    font-size: 26px;
+  }
+  .Salesaicards{
+    width: 430px !important;
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .banner-second-heading h1 {
+    font-size: calc(96px - 20px) !important;
+    line-height: 80px !important;
+  }
+
+  .banner-heading-top1 .h2 {
+    font-size: 40px !important;
+    line-height: 60px !important;
+  }
+
+  .timeline {
+    padding: 40px 0px;
+  }
+
+  .banner-second-heading h6 {
+    font-size: 24px !important;
+  }
+
+  .img-card {
+    padding: 14px 8px;
+    width: 22%;
+  }
+
+  .banner-second-heading {
+    width: 70%;
+  }
+
+  .banner-logo img {
+    /* max-width: calc(100% - 25%); */
+  }
+
+  .aiPoweredIndustries-card2 {
+    min-width: 48%;
+  }
+
+  .aiPoweredIndustries-content h2 {
+    font-size: 3.1rem !important;
+    line-height: 54px !important;
+  }
+
+  .banner-logo {
+    margin-top: 40px;
+  }
+
+  .strugling-para2 {
+    padding: 0px 200px !important;
+    line-height: 30px !important;
+    margin-bottom: 50px !important;
+  }
+
+  .aifuturecard .Salesaicards {
+    min-height: 12vh !important;
+    width: 29vw !important;
+  }
+
+  .card3-body h5 {
+    font-size: 29px !important;
+    line-height: 35px !important;
+    font-weight: 600 !important;
+  }
+
+  .client-heading h5 {
+    font-size: 48px !important;
+    font-weight: bold !important;
+  }
+
+  .client-heading p {
+    font-size: 20px !important;
+  }
+
+  .clientcontent1 {
+    width: 160px;
+  }
+
+  .client-custombox {
+    width: 440px;
+  }
+
+  .clent-para1 {
+    font-size: 18px !important;
+    line-height: 25px !important;
+
+  }
+
+  .clent-para2 {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+
+  .pics-div {
+    padding-bottom: 16px;
+  }
+
+  .banner-second-heading p {
+    margin: 0 auto !important;
+    font-size: 22px !important;
+    width: 75% !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-second-heading h1 {
+    font-size: 62px !important;
+  }
+  .img-card {
+    padding: 14px 8px !important ;
+    width: 17% !important;
+}
+  p {
+    font-size: unset !important;
+  }
+
+  .banner-second-heading h6 {
+    font-size: 18px !important;
+    margin-bottom: 30px;
+  }
+
+  .strugling-lower-content .card4-body {
+    width: 48% !important;
+  }
+
+  .nav-link {
+    width: 310px;
+    padding: 10px !important;
+    font-size: 19px;
+  }
+  .card-content h3{
+    font-size: 24px !important;
+  }
+
+  .card3-body h5 {
+    font-size: 25px !important;
+    line-height: 30px !important;
+    font-weight: 600 !important;
+  }
+
+  .aiPoweredIndustries-content h2 {
+    font-size: 2.8rem !important;
+    line-height: 50px !important;
+  }
+
+  .youtube-video-video  {
+    width: 60% !important;
+  }
+
+  .leads-wrapper .leads-upper-content .banner-heading-top .h2 {
+    font-size: 50px !important;
+    line-height: 60px !important;
+  }
+
+  .leads-lower-content h5 {
+    font-size: 20px !important;
+    line-height: 26px !important;
+  }
+
+  .aiPoweredIndustries-card2 {
+    min-width: 38%;
+  }
+
+  .leads-lower-content .card {
+    width: 48%;
+  }
+
+  .strugling-content h2 {
+    font-size: 40px !important;
+  }
+
+  .strugling-para2 {
+    padding: 0px 180px !important;
+  }
+
+  .aifuturecard .card3 {
+    min-height: 10vh !important;
+    width: 30vw !important;
+  }
+
+  .Client-mainbox {
+    padding: 20px 0px !important;
+  }
+
+  .client-heading h5 {
+    font-size: 42px !important;
+    font-weight: bold !important;
+  }
+
+  .client-heading p {
+    font-size: 18px !important;
+  }
+
+  .client-custombox {
+    width: auto !important;
+  }
+
+  .clent-para1 {
+    font-size: 18px !important;
+    line-height: 25px !important;
+
+  }
+
+  .clent-para2 {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+
+  .client-heading {
+    padding: 20px;
+  }
+
+  .pics-div {
+    padding-bottom: 16px;
+  }
+  .timeline-left{
+    margin-right: 30px !important;
+  }
+  .banner-logo-1 {
+    width :200px !important ;
+  }
+  .testimonial-heading h2 {
+    font-size: 2.5rem !important;
+    line-height: 52px !important;
+}
+}
+
+@media screen and (max-width: 992px) {
+  .strugling-content h2 {
+    font-size: 30px !important;
+  }
+
+  .aiPoweredIndustries-card2 {
+    min-width: 50%;
+    min-height: 300px;
+  }
+
+
+
+  .strugling-para2 {
+    padding: 0px 60px !important;
+  }
+
+  .aifuturecard .Salesaicards {
+    width: 31vw !important;
+    /* padding: 0px 0px 0px 0px !important; */
+  }
+
+  .aifuturecard .card3 h5 {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+  .timeline-content {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .timeline-body h6{
+    font-size: 17px !important;
+  }
+  .timeline-body p{
+    font-size: 16px !important;
+  }
+  .timeline-left {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    margin-right: 0px !important;
+  }
+
+  .timeline-right {
+    width: 100% !important;
+  }
+
+  .nav-link {
+    width: 266px;
+    padding: 10px !important;
+    font-size: 15px;
+  }
+
+  .future-wrapper {
+    margin: 50px 0px !important;
+  }
+
+  .card4-body p {
+    font-size: 17px !important;
+  }
+
+  .aiPoweredIndustries-content h2 {
+    width: 100%;
+    margin-bottom: 20px !important;
+    font-size: 2rem !important;
+    line-height: 45px !important;
+  }
+
+  .banner-second-heading p {
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+
+  .aiPoweredIndustries-content p {
+    width: 100%;
+    margin-bottom: 20px !important;
+  }
+
+  .testimonial-heading {
+    padding: 20px !important;
+  }
+  .testimonial-heading h2 {
+    font-size: 2.2rem !important;
+    line-height: 44px !important;
+  }
+  .aiPoweredIndustries-card {
+    min-width: 300px;
+  }
+  .youtube-video-video  {
+    width: 80% !important;
+  }
+  .card-content h3{
+    font-size: 22px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-heading-top {
+    width: 70% !important;
+  }
+
+  .banner-logo-1 {
+    width :180px !important ;
+  }
+
+  .banner-second-heading {
+    width: 100% !important;
+  }
+
+  .aiPoweredIndustries-card2 {
+    width: 33% !important;
+    text-align: center;
+    min-height: 300px;
+  }
+
+  .aiPoweredIndustries-content h2 {
+    width: 100%;
+    font-size: 2.1rem !important;
+    line-height: 40px !important;
+  }
+
+  .aiPoweredIndustries-content p {
+    width: 100%;
+
+  }
+  .leads-upper-content h2 {
+    font-size: 2rem !important;
+    line-height: 40px !important;
+}
+
+  .timeline-content {
+    flex-direction: column !important;
+  }
+  .timeline-right{
+    margin-top: 20px !important;
+  }
+  .timeline-right-content h6{
+    font-size: 20px !important;
+  }
+
+  h2 {
+    font-size: 36px !important;
+    line-height: 44px !important;
+  }
+
+  .img-card {
+    padding: 15px 8px;
+  }
+
+  .strugling-content h2 {
+    font-size: 25px !important;
+  }
+
+  .strugling-para2 {
+    padding: 0px 0px !important;
+  }
+
+  .aifuturecard {
+    gap: 10px;
+  }
+
+  .card4-body>h6 {
+    font-size: 20px !important
+  }
+
+  .strugling-lower-content .card4-body {
+    width: 47% !important;
+    height: 190px !important;
+  }
+
+  .strugling-lower-content {
+    justify-content: center !important;
+  }
+
+  .youtube-video-video>* {
+    height: 260px !important;
+  }
+
+  .card4-body h6 {
+    font-size: 21px !important;
+    line-height: 30px !important;
+  }
+
+  .card4-body p {
+    font-size: 14px !important;
+    line-height: 25px !important;
+  }
+
+  .img-card {
+    padding: 14px 8px;
+    width: 28% !important;
+  }
+
+
+  .testimonial-h2 {
+    font-size: 26px !important;
+    line-height: 33px !important;
+  }
+
+  .testimonial-heading {
+    padding: 0 !important;
+  }
+
+  .card-content h3{
+    font-size: 20px !important;
+  }
+
+  .aiPoweredIndustries-card2 {
+    min-width: 231px !important;
+  }
+
+  .aiPoweredIndustries-card {
+    min-width: 231px;
+  }
+
+  .animated-line {
+    width: 52px !important;
+    height: 1px !important;
+    background: linear-gradient(180deg, rgba(10, 16, 28, 0.58) -90.67%, rgba(187, 70, 255, 0.90) 100%) !important;
+  }
+
+  .client-heading h5 {
+    text-align: center;
+    font-size: 32px !important;
+    font-weight: bold !important;
+  }
+
+  .client-heading p {
+    text-align: center;
+    font-size: 18px !important;
+  }
+  .testimonial-heading h2 {
+    font-size: 1.7rem !important;
+    line-height: 29px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner-logo-1 {
+    width :160px !important ;
+  }
+  .banner-second-heading p {
+    font-size: 1.2rem !important;
+  }
+  .testimonial-heading h2 {
+    font-size: 1.1rem !important;
+    line-height: 29px !important;
+  }
+  .timeline-right-content h6{
+    font-size: 17px !important;
+  }
+  .aifuturecard .card3 h5 {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+
+  .banner-second-heading h1 {
+    font-size: 48px !important;
+    line-height: 60px !important;
+  }
+
+  .banner-second-heading h6 {
+    line-height: 26px !important;
+  }
+
+  .animated-line {
+    background: linear-gradient(180deg, rgba(10, 16, 28, 0.58) -90.67%, rgba(187, 70, 255, 0.90) 100%) !important;
+  }
+
+  .banner-content {
+    margin: 50px 0px;
+  }
+
+  .strugling-content {
+    margin-top: 20px;
+  }
+
+  .banner-content {
+    margin: 50px 0px;
+  }
+
+  .strugling-content {
+    margin-top: 20px;
+  }
+
+  .aifuturecard .card3 h5 {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  .aifuturecard .card3 p {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+
+  .aiPoweredIndustries-content h2 {
+    width: 100%;
+    font-size: 19px !important;
+    line-height: 35px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .aiPoweredIndustries-content p {
+    margin-bottom: 10px !important;
+  }
+
+  .nav-link {
+    width: 220px;
+    padding: 10px !important;
+    font-size: 13px;
+  }
+
+  p {
+    line-height: 1.7rem !important;
+  }
+
+  .container {
+    padding: 0px 30px !important;
+  }
+
+  .banner-second-heading .btn-2 {
+    font-size: 17px !important;
+  }
+
+  .aiPoweredIndustries-card h3 {
+    font-size: 14px !important;
+    text-align: center;
+  }
+
+  .client-heading h5 {
+    font-size: 31px !important;
+    line-height: 43px !important;
+  }
+
+  .aiPoweredIndustries-card .card-image {
+    max-width: 30% !important;
+  }
+
+  .aiPoweredIndustries-card {
+    min-width: 100% !important;
+
+  }
+
+  .client-height2 {
+    margin-top: 50px !important;
+  }
+
+  .aiPoweredIndustries-card {
+    min-height: 180px;
+  }
+
+  .card-details {
+    width: 100% !important;
+  }
+
+  .card-details p {
+    font-size: 12px !important;
+    line-height: 18px !important;
+  }
+
+  .aiPoweredIndustries-card2 {
+    width: 20% !important;
+    min-height: 180px !important;
+  }
+
+  .aiPoweredIndustries-card2 {
+    padding: 10px !important;
+    width: 15% !important;
+  }
+
+  .aiPoweredIndustries-card2 .card-content h3 {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+
+  .leads-lower-content .card {
+    width: 45% !important;
+  }
+
+  .leads-lower-content .card {
+    padding: 0px !important;
+  }
+
+  .strugling-lower-content {
+    margin-top: 47px;
+  }
+
+  .strugling-content h2 {
+    font-size: 27px !important;
+    line-height: 36px !important;
+  }
+
+  .strugling-lower-content .card4-body {
+    width: 93% !important;
+    height: 192px !important;
+  }
+
+  .aifuturecard .Salesaicards {
+    width: 38vw !important;
+  }
+
+  .strugling-lower-content {
+    width: 100% !important;
+  }
+
+  .youtube-video-video>* {
+    width: 100% !important;
+    height:20px !important;
+  }
+
+  .testimonial-wrapper {
+    margin: 50px 0px !important;
+  }
+
+  .img-card {
+    padding: 14px 8px;
+    width: 50% !important;
+  }
+
+  .leads-lower-content h5 {
+    font-size: 17px !important;
+    line-height: 24px !important;
+  }
+
+  .leads-lower-content p {
+    font-size: 13px !important;
+    line-height: 18px !important;
+  }
+
+  .banner-content {
+    min-height: 70vh !important;
+  }
+
+  .banner-logo {
+    margin: 0px !important;
+  }
+
+  .banner-second-heading p {
+    margin-bottom: 30px !important;
+  }
+
+  .leads-wrapper {
+    margin: 45px 0px !important;
+  }
+
+  .leads-upper-content h2 {
+    padding: 20px 0px !important;
+    font-size: 21px !important;
+    line-height: 35px !important;
+  }
+
+  .leads-lower-content {
+    margin-top: 10px !important;
+  }
+
+  .aiPoweredIndustries-content h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .aifuturecard .Salesaicards {
+    padding: 40px 15px 27px 20px !important;
+  }
+
+  .future-wrapper {
+    margin: 0px 0px 50px 0px !important;
+  }
+
+  .banner-heading-top {
+    width: 90% !important;
+  }
+
+  .banner-heading-top p {
+    font-size: 12px !important;
+  }
+
+  .youtube-video-main{
+    margin: 0px 0px !important;
+  }
+  /* .accordion-button h3 {
+    font-size:16px !important;
+    margin: 0px !important;
+    width: 90% !important;
+} 
+  .accordion-button svg {
+    width: 10% !important;
+}  */
+}
