@@ -3,7 +3,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/Landingcomponent/*": ["./src/app/Componenets/landing/*"],
-      "@/landingimage/*": ["./public/assets/landingimage/*"]
+      "@/landingimage/*": ["./public/assets/landingimage/*"],
+      "@/css/*": ["./public/assets/css/*"],
     }
   }
 }

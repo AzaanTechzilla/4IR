@@ -348,6 +348,7 @@ export default function Index() {
   const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
+    require("bootstrap/js/index.esm");
     if (typeof window !== "undefined") {
       setAudio(new Audio("/assets/landingimage/heather-audio.wav"));
     }

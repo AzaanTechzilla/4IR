@@ -1,4 +1,3 @@
-
 import "../../../public/assets/css/Global.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "../Componenets/landing/Navbar/Footer";
