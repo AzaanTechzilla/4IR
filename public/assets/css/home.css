@@ -28,8 +28,7 @@
     margin: 0px 20px 0px 0px;
     display: flex;
     align-items: center; 
-    justify-content: center;
-    width: fit-content;
+    width: fit-content !important;
     border-radius: 50px;
     padding: 0.2rem 0.6rem; 
     line-height: 1.5; 
