@@ -1,3 +1,4 @@
+'use client'
 import "@/css/home.css"
 import Image from "next/image";
 import Robot from "../../public/assets/images/landing/robot.png";
@@ -5,8 +6,55 @@ import H1 from "./Componenets/landing/Typography/H1";
 import Logo from "../../public/assets/images/4IRonlyLogo.png";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import "@/css/home.css";
-import background from "../../public/assets/images/landing/RoundBlue.gif"
+import background from "../../public/assets/images/landing/RoundBlue.gif";
+import SecondBannerImg from "../../public/assets/images/second-banner-img.png";
+import H2 from "./Componenets/landing/Typography/H2";
+import H3 from "./Componenets/landing/Typography/H3";
+import { useState, useEffect } from "react";
+import { FaPlay } from "react-icons/fa";
+import HomeCard1 from "./Componenets/webcomponents/Home page Cards/HomeCard1";
+import Data from "./db.json"
+import Para from "./Componenets/landing/Typography/Para";
+import H4 from "./Componenets/landing/Typography/H4";
+import GenerateLeadBox from "./Componenets/webcomponents/GenerateLeadBox/GenerateLeadBox";
+import HomeCard2 from "./Componenets/webcomponents/Home page Cards/HomeCard2";
+import "@/css/widget.css"
+import TeamCard from "./Componenets/webcomponents/Home page Cards/TeamCard";
+import BlogCards from "./Componenets/webcomponents/Home page Cards/BlogCards";
+import { FaArrowRight } from "react-icons/fa";
+import Accordian from "./Componenets/webcomponents/Accordian/Accordian";
+import {
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
+  AccordionItem,
+} from 'reactstrap';
 export default function Home() {
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [audio, setAudio] = useState(null);
+    const [open, setOpen] = useState(null);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setAudio(new Audio("/assets/landingimage/heather-audio.wav"));
+    }
+  }, []);
+  const toggle = (id) => {
+    setOpen((prevOpen) => (prevOpen === id ? null : id));
+  };
+  const toggleAnimation = () => {
+    setIsAnimating(!isAnimating);
+  };
+  const handlePlayPause = () => {
+    if (!audio) return;
+
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
   return (
     <>
       <section className="banner">
@@ -46,6 +94,174 @@ export default function Home() {
                   <Image src={Robot} alt="Robot Images" />
                 </figure>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="second-section">
+        <div className="second-section-wrapper">
+          <div className="container">
+            <div className="second-section-content">
+              <div className="second-section-left">
+                <Image src={SecondBannerImg} alt="second-banner" />
+              </div>
+              <div className="second-section-right">
+                <div className="second-section-right-content">
+                  <span className="second-section-heading">What is 4IR</span>
+                  <H2 title="Fourth Industrial Revolution Inc." />
+                  <p>
+                    At Fourth Industrial Revolution Inc., we are dedicated to guiding businesses through the transformative power of artificial intelligence. With a team of seasoned experts at the helm, specializing in AI consulting and product solutions, we provide tailored AI solutions that propel your business into the future. Our mission is simple yet ambitious: to empower organizations to thrive in the dynamic landscape of the Fourth Industrial Revolution.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="Demo">
+        <div className="Demo-wrapper">
+          <div className="container">
+            <div className="Demo-content">
+              <H2 title="A Demo From Our One Solution" className='text-center' />
+              <div className="Demo-video">
+                <div
+                  onClick={() => {
+                    handlePlayPause();
+                    toggleAnimation();
+                  }}
+                  className="d-flex justify-content-center"
+                >
+                  {isAnimating ? (
+
+                    <div
+                      className={`audio-button ${isAnimating ? "animating" : ""}`}
+                    >
+                      <div className="wave-icon">
+                        <div className="wave wave1"></div>
+                        <div className="wave wave2"></div>
+                        <div className="wave wave3"></div>
+                        <div className="wave wave4"></div>
+                        <div className="wave wave5"></div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="play-btn d-flex justify-content-center">
+                      <FaPlay color="blue" className="ms-2" />
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="fourth-section">
+        <div className="fourth-section-wrapper">
+          <div className="container">
+            <div className="fourth-section-content">
+              <H2 title="How do you fit into 4IR" className='text-center' />
+              <div className="fourth-sec-card">
+
+                {Data.homecard1.map((items, index) => {
+                  return (
+                    <HomeCard1 items={items} key={index} />
+                  )
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="generateLead-sec">
+        <div className="generateLead-wrapper">
+          <div className="container">
+            <div className="generateLead-content">
+              <div>
+                <H2 title="How 4IR help businesses generate leads" className="text-center" />
+                <Para title="At 4IR Inc., we're not just tech geeks; we're your partners in growth. We use the latest AI and data magic to help your business find and connect with the right people." className='text-center' />
+              </div>
+            </div>
+            <div className="generateLead">
+              <GenerateLeadBox data={Data.generateleadbox} />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="ChooseUs-sec">
+        <div className="ChooseUs-wrapper">
+          <div className="container">
+            <div className="ChooseUs-sec-content">
+              <H2 title="Why Choose Us?" className="text-center" />
+              <Para className="text-center" title="Because we're your guide to the future of business. We simplify complex technology, making it accessible and effective for your business. Our team of experts will work with you to identify your unique needs and develop super-charge solutions that drive growth." />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="IndustrySolution" >
+        <div className="IndustrySolution-wrapper">
+          <div className="container">
+            <H2 title="Industry-specific Solutions" className="text-center" />
+            <div className="Home-card2">
+              {Data.industrysolutionbox.map((items, index) => {
+                return (
+                  <>
+                    <HomeCard2 items={items} index={index} />
+                  </>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="Team">
+        <div className="Team-wrapper">
+          <div className="container">
+            <div className="Team-content">
+              <H2 title="Meet our team." className="text-center" />
+              <Para title="Empowers users to create, customize, collaborate, and track seamlessly, streamlining project tasks for optimal efficiency." />
+            </div>
+            <div className="Team-card">
+              {Data.team.map((items, index) => {
+                return (
+                  <TeamCard items={items} key={index} />
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="Blog">
+        <div className="Blog-wrapper">
+          <div className="container">
+            <div className="Blog-content">
+              <H2 title="Our Latest Blog" className="text-center" />
+              <div className="Blog-parent">
+                {Data.blog.map((items, index) => {
+                  return (
+                    <BlogCards items={items} index={index} />
+                  )
+                })}
+              </div>
+              <a href='' className="viewbtn">View More <FaArrowRight /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="Accordian">
+        <div className="Accordian-wrapper">
+          <div className="container">
+            <H2 title="Frequently Asked Questions" className="text-center" />
+            <div className="accordian-parent">
+            <Accordion open={open} toggle={toggle}  style={{
+    '--bs-accordion-bg': '#090B0C',
+    '--bs-accordion-btn-color': '#fff', 
+  }}>
+            {Data.accordian.map((items, index) => {
+              return (
+                <Accordian items={items} key={index} />
+              )
+            })}
+              </Accordion>
             </div>
           </div>
         </div>

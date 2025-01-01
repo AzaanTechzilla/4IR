@@ -1,0 +1,161 @@
+{
+    "homecard1": [
+        {
+        "id": 1,
+        "title": "Revolutionizing Information Processing",
+        "img": "/assets/images/forthsectionimg.png",
+        "para": "Large language models are capable of processing and generating human-quality text, enabling more efficient and effective information management. This has significant implications for various industries, from content creation to data analysis."
+        },
+        {
+        "id": 2,
+        "title": "Powering Intelligent Systems",
+        "img": "/assets/images/forthsectionimg.png",
+        "para": "These models form the backbone of intelligent systems, such as chatbots, virtual assistants, and automated customer service systems. They enhance user experiences and streamline operations."
+        },
+        {
+        "id": 3,
+        "title": "Accelerating Scientific Discovery",
+        "img": "/assets/images/forthsectionimg.png",
+        "para": "By analyzing vast datasets and generating insights, large language models contribute to scientific research and development. They can help researchers identify patterns, formulate hypotheses, and accelerate the pace of discovery."
+        }
+    ],
+    "generateleadbox":[
+        {
+            "id": 1,
+            "number": "01",
+            "title": "Smart Hunting:",
+            "para": "We use AI to sniff out potential customers who are a perfect match for your product or service. It's like having a super-powered sales team that never sleeps."
+        },
+        {
+            "id": 2,
+            "number": "02",
+            "title": "Personalized Persuasion:",
+            "para": "We craft customized messages that resonate with each customer. It's like having a one-on-one chat with every potential client."
+        },
+        {
+            "id": 3,
+            "number": "03",
+            "title": "Data-Driven Decisions:",
+            "para": "We use data to track what works and what doesn't. It's like having a crystal ball that shows you the future of your sales."
+        },
+        {
+            "id": 4,
+            "number": "04",
+            "title": "Automating the Boring Stuff:",
+            "para": "We handle repetitive tasks like email campaigns and social media posts, so you can focus on what you do best."
+        },
+        {
+            "id": 5,
+            "number": "05",
+            "title": "Keeping it Secure:",
+            "para": " We protect your customer data with ironclad security, so you can rest easy knowing their information is safe."
+        }
+    ],
+    "industrysolutionbox":[
+        {
+            "id": 1,
+            "title": "Healthcare",
+            "img":"/assets/images/health.png",
+            "para": "Let's make healthcare smarter. With AI-powered tools, we can improve diagnoses, personalize treatments, and streamline patient care."
+        },
+        {
+            "id": 2,
+            "title": "Finance",
+            "img":"/assets/images/finance.png",
+            "para": "Making finance smarter, safer, and more efficient. Our AI solutions can help detect fraud, assess risks, and make better investment decisions."
+        },
+        {
+            "id": 3,
+            "title": "Logistics and Supply Chain",
+            "img":"/assets/images/transparent.png",
+            "para": "Optimizing the supply chain. With AI-powered solutions, we can improve tracking, reduce costs, and ensure timely deliveries."
+        },
+        {
+            "id": 4,
+            "title": "Manufacturing",
+            "img":"/assets/images/setting.png",
+            "para": "Building a smarter future for manufacturing. Our AI solutions can improve quality control, predict maintenance needs, and streamline supply chains."
+        },
+        {
+            "id": 5,
+            "title": "Education",
+            "img":"/assets/images/education.png",
+            "para": "Empowering learners with AI. We can personalize education, automate administrative tasks, and enhance the overall learning experience."
+        },
+        {
+            "id": 6,
+            "title": "Retail",
+            "img":"/assets/images/shop.png",
+            "para": "Let's revolutionize retail. With AI-powered insights, we can deliver personalized shopping experiences and optimize inventory management."
+        },
+        {
+            "id": 7,
+            "title": "Other Industries:",
+            "img":"/assets/images/industries.png",
+            "para": "Revolutionizing the Future AI-powered solutions for diverse sectors, including agriculture, energy, real estate, and government."
+        }
+    ],
+    "team":[
+        {
+            "id":1,
+            "name":"Barry Krevoy",
+            "img": "/assets/images/team/BarryKrevoy.png",
+            "designation":"CEO",
+            "classname": "Team-member1"
+        },
+        {
+            "id":2,
+            "name":"Shane Krevoy",
+            "img": "/assets/images/team/ShaneKrevoy.png",
+            "designation":"Archivist",
+             "classname": "Team-member2"
+        }
+    ],
+    "blog":[
+        {
+            "id": 1,
+            "title": "Activities Improve Mind",
+            "img": "/assets/images/blog1.png",
+            "para": "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs."
+        },
+        {
+            "id": 2,
+            "title": "Activities Improve Mind",
+            "img": "/assets/images/blog2.png",
+            "para": "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs."
+        },
+        {
+            "id": 3,
+            "title": "Activities Improve Mind",
+            "img": "/assets/images/blog3.png",
+            "para": "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs."
+        }
+    ],
+    "accordian": [
+        {
+            "id": 1,
+            "title": "What's the big deal about the 4th Industrial Revolution? ",
+            "para": "Think of it as the next big wave of technological innovation. It's a world where machines and humans work together, powered by AI, robotics, and the internet."
+        },
+        {
+            "id": 2,
+            "title": "How can 4IR help my business? ",
+            "para": "Imagine a world where your business is super-efficient, super-smart, and always a step ahead. 4IR can make that a reality, from automating tasks to making data-driven decisions."
+        },
+        {
+            "id": 3,
+            "title": "Are there any downsides to 4IR?",
+            "para": "Like any big change, there are potential challenges. But with careful planning and ethical considerations, we can navigate these challenges and reap the benefits."
+        },
+        {
+            "id": 4,
+            "title": "How can I get my business ready for the future?",
+            "para": "Embrace technology, upskill your team, and focus on data. By staying ahead of the curve, you can position your business for long-term success."
+        },
+        {
+            "id": 5,
+            "title": "Can 4IR help solve global problems?",
+            "para": "Absolutely! 4IR technologies have the power to tackle big challenges like climate change and poverty. By working together, we can use these tools to build a better future for everyone."
+        }
+    ]
+}

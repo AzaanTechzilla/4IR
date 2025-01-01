@@ -1,0 +1,151 @@
+.Team-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Team-content p{
+width: 60%;
+text-align: center;
+}
+.Team-card{
+    display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 2rem;
+gap: 1rem;
+}
+.Team-member1{
+    flex-basis: 45%;
+    background-color:#01A1CD;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.Team-member2{
+    flex-basis: 45%;
+    background-color: #FBC349 ;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.Team-member1 figure{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+.Team-member1 figure img{
+   width: 100%;
+    height: auto;
+}
+.Team-member2 figure{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+.Team-member2 figure img{
+    width: 100%;
+    height: auto;
+}
+.team-member-content{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    display: none;
+}
+.team-member-content p{
+color: var(--white-color);
+}
+.Team-member1:hover .team-member-content, .Team-member2:hover .team-member-content{
+    display: block;
+    transition: all.5s;
+}
+.Team-member1:hover::before, .Team-member2:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0.009016106442576999) 0%, rgba(0,0,0,0.636467086834734) 100%, rgba(0,0,0,1) 100%);
+    border-radius: 20px;
+    transition: all.8s;
+  
+}
+.Blog-parent{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0px;
+}
+.blog-card{
+    flex-basis: 32%;
+    padding: 20px;
+    border: 1.5px solid var(--para-color);
+    border-radius: 20px;
+}
+.blog-card figure{
+    width: 100%;
+    border-radius: 20px;
+    height: auto;
+    margin: 0 auto;
+}
+.blog-card figure img{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+.blog-card-content{
+    padding:20px 0px 0px 0px;
+}
+.blog-card-content a{
+color: var(--para-color);
+padding-top: 10px;
+}
+.blog-card-content a svg{
+font-size: 23px;
+padding-left: 10px;
+}
+.viewbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.viewbtn svg{
+    font-size: 23px;
+    padding-left: 10px;
+}
+.Accordian-wrapper{
+    margin: 2rem 0px;
+}
+.accordian-parent{
+    margin: 2rem 0px;
+}
+.accordion{
+    background-color: var(--background) ;
+}
+  .accordion-body {
+    background-color: #e9ecef;
+  }
+@media screen and (max-width: 992px){
+    .blog-card{
+        flex-basis: 48%;
+    }
+}
+@media screen and (max-width: 768px){
+    .Team-content p{
+        width: 100%;
+    }
+    .Team-card{
+        flex-direction: column;
+    }
+    .Team-member1, .Team-member2{
+        flex-basis: 100%;
+    }  
+}
+@media screen and (max-width: 576px){
+    .blog-card{
+        flex-basis: 100%;
+    }
+    
+}
