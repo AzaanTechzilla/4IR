@@ -27,10 +27,10 @@ export default function Header() {
                             <div className={`${styles.navbarMenu} d-none d-md-block`}>
                                 <ul>
                                     <li>
-                                        <a href="index.html">Home <IoIosArrowDown /></a>
+                                        <Link href="/">Home <IoIosArrowDown /></Link>
                                     </li>
                                     <li className={styles.dropdown}>
-                                        <a href="about.html">About 4IR <IoIosArrowDown /></a>
+                                        <Link href="/aboutus">About 4IR <IoIosArrowDown /></Link>
                                     </li>
                                     <li>
                                         <a href="services.html">Our Solution <IoIosArrowDown /></a>
@@ -63,8 +63,8 @@ export default function Header() {
                     </OffcanvasHeader>
                     <OffcanvasBody>
                         <ul className={styles.offcanvasMenu}>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About 4IR</a></li>
+                            <li><Link href="/">Home</Link></li>
+                            <li><Link href="/aboutus">About 4IR</Link></li>
                             <li><a href="services.html">Our Solution</a></li>
                             <li><a href="portfolio.html">Industries</a></li>
                             <li><a href="contact.html">Blog</a></li>

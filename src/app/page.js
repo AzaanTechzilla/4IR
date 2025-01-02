@@ -15,7 +15,7 @@ import Data from "./db.json"
 import Para from "./Componenets/landing/Typography/Para";
 import GenerateLeadBox from "./Componenets/webcomponents/GenerateLeadBox/GenerateLeadBox";
 import "@/css/widget.css"
-import Accordian from "./Componenets/webcomponents/Accordian/Accordian";
+import AccordianComponent from "./Componenets/webcomponents/Accordian/AccordianComponent";
 import {
   Accordion
 
@@ -275,12 +275,12 @@ export default function Home() {
                 '--bs-accordion-active-bg': '#090B0C',
                 '--bs-accordion-active-color': '#fff',
                 '--bs-accordion-btn-focus-box-shadow':'0px 4px 22.6px 0px #3104707D ',
-                '--bs-accordion-border-color': '#3104707D',
+                '--bs-accordion-border-color': '#fff',
                 '--bs-accordion-border-width': '2px'
               }}>
                 {Data.accordian.map((items, index) => {
                   return (
-                    <Accordian items={items} key={index} />
+                    <AccordianComponent items={items} key={index} />
                   )
                 })}
               </Accordion>

@@ -1,0 +1,149 @@
+.aboutfirst-wrapper{
+    padding: 50px 0px;
+}
+.aboutfirst-content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem; 
+    align-items: center;
+}
+
+.aboutfirst-left,.aboutfirst-right  {
+    grid-column: span 6; 
+}
+
+.figure {
+    grid-column: 2 / 12;
+    margin-top: 2rem;
+}
+.figure img{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.aboutfirst-box1,
+.aboutfirst-box2 {
+    grid-column: span 6;
+    padding: 1rem;
+    background: #121212;
+    color: #fff;
+    border-radius: 8px;
+    text-align: start;
+}
+
+.aboutfirst-box1 {
+    margin-right: 1rem; 
+}
+
+.aboutfirst-box2 {
+    margin-left: 1rem;
+}
+.aboutsecond-wrapper{
+    background-color: var(--primary-color);
+    padding: 50px 0px;
+}
+.aboutsecond-content{
+    display: flex;
+}
+.aboutsecond-left{
+    flex-basis: 30%;
+
+}
+.aboutsecond-right{
+    flex-basis: 70%;
+}
+.aboutsecond-right > p{
+    margin-bottom: 1.2rem;
+}
+.aboutboxes{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.aboutbox-content{
+flex-basis: 49%;
+background: linear-gradient(125.44deg, rgba(255, 255, 255, 0.15) 4.5%, rgba(255, 255, 255, 0.1) 100%),
+linear-gradient(0deg, rgba(22, 10, 36, 0.5), rgba(22, 10, 36, 0.5));
+padding: 25px;
+border-radius: 15px;
+}
+.aboutbox-content h5{
+    font-size: 3.5rem;
+}
+.aboutbox-content p{
+    width: 97%;
+}
+.Team-wrapper{
+    padding: 50px 0px;
+}
+@media screen and (max-width: 1200px) {
+    .aboutbox-content h5{
+        font-size: 2.7rem;
+    }
+    .aboutbox-content p{
+        font-size: 0.95rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    .aboutbox-content{
+        flex-basis: 48%;
+    }
+    .aboutbox-content h5{
+        font-size: 2.3rem;
+    }
+    .aboutbox-content p{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 768px) {
+    .aboutfirst-wrapper{
+        padding: 30px 0px;
+    }
+    .aboutsecond-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .aboutfirst-content {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    .aboutbox-content{
+        flex-basis: 100%;
+    }
+
+    .aboutfirst-left,
+    .aboutfirst-right {
+        grid-column: span 12;
+        text-align: center; 
+    }
+
+    .figure {
+        grid-column: span 12; 
+        margin-top: 1rem;
+    }
+
+    .aboutfirst-box1,
+    .aboutfirst-box2 {
+        grid-column: span 12;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .Team-wrapper{
+        padding: 30px 0px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .aboutsecond-wrapper{
+        padding: 30px 0px ;
+    }
+    .aboutbox-content h5{
+        font-size: 2rem;
+    }
+    .aboutbox-content p{
+        font-size: 0.85rem;
+    }
+    
+}

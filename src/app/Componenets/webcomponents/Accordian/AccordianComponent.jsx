@@ -1,6 +1,4 @@
-'use client';
-
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Accordion,
   AccordionBody,
@@ -8,7 +6,7 @@ import {
   AccordionItem,
 } from 'reactstrap';
 
-export default function Accordian({ items, index }) {
+export default function AccordianComponent({ items, index }) {
 
   return (
         <AccordionItem key={index}>
