@@ -261,22 +261,6 @@
     font-size: 68px;
 }
 
-.fourth-sec-card {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 1.5rem;
-}
-
-.forth-box {
-    flex-basis: 31.1%;
-    cursor: pointer;
-    position: relative;
-}
-
-.forth-box-body {
-    padding: 7px 10px;
-}
 
 .generateLead-wrapper {
     padding: 50px 0px;
@@ -324,84 +308,9 @@
     align-items: center;
 }
 
-.ChooseUs-wrapper {
-    padding: 50px 0px;
-    background-color: var(--primary-color);
-}
-
-.ChooseUs-sec-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.ChooseUs-sec-content>p {
-    width: 60%;
-    margin: 20px 0px;
-}
 
 .IndustrySolution-wrapper {
     padding: 50px 0px;
-}
-
-.Home-card2 {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.Home-card2-content {
-    flex-basis: 31%;
-    text-align: center;
-    background-color: var(--background);
-    padding: 20px;
-    border-radius: 20px;
-    border: 2px solid transparent;
-    position: relative;
-}
-
-.Home-card2-content::before {
-    content: "";
-    background: radial-gradient(414.02% 763.32% at 0% 2.81%, rgba(196, 0, 255, 0.64) 0%, rgba(136, 0, 255, 0.65) 100%);
-    position: absolute;
-    top: -3.5px;
-    left: -3.5px;
-    right: -3.5px;
-    bottom: -3.5px;
-    z-index: -1;
-    border-radius: 20px;
-
-}
-
-.Home-card2-content:hover {
-    background: radial-gradient(414.02% 763.32% at 0% 2.81%, rgba(196, 0, 255, 0.64) 0%, rgba(136, 0, 255, 0.65) 100%);
-    transition: all.5s;
-}
-
-.Home-card2-content:hover::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 20px;
-    background: linear-gradient(139deg, rgba(255, 255, 255, 0.009016106442576999) 0%, rgba(0, 21, 255, 0.45719537815126055) 100%, rgba(0, 0, 0, 1) 100%);
-    z-index: -1;
-}
-
-.Home-card2-content figure {
-    width: 14%;
-    height: auto;
-    justify-self: center;
-}
-
-.Home-card2-content figure img {
-    width: 100%;
-    height: auto;
 }
 .Team-wrapper{
     padding-bottom: 50px;
@@ -427,7 +336,6 @@
     }
 
 }
-
 @media screen and (max-width: 1200px) {
     .banner-wrapper {
         margin: 0px;
@@ -469,16 +377,7 @@
         font-size: 70px;
     }
 
-    .fourth-sec-card {
-        gap: 2rem;
-    }
-
-    .forth-box {
-        flex-basis: 31%;
-    }
-
 }
-
 @media screen and (max-width: 992px) {
     .banner-wrapper {
         margin: 30px 0px;
@@ -547,11 +446,6 @@
         width: 100%;
     }
 
-
-    .forth-box {
-        flex-basis: 47%;
-    }
-
     .generateLead {
         flex-direction: column;
         gap: 50px;
@@ -567,33 +461,12 @@
     .generateLead-left span {
         font-size: 3rem;
     }
-
-    .ChooseUs-sec-content>p {
-        width: 80%;
-    }
-
-    .Home-card2 {
-        gap: 1rem;
-    }
-
-    .Home-card2-content {
-        flex-basis: 48%;
-    }
-
-    .Home-card2-content figure {
-        width: 13%;
-    }
-
 }
 
 @media screen and (max-width: 768px) {
     .revolution-span {
         text-align: center;
         font-size: 17px;
-    }
-
-    .forth-box {
-        flex-basis: 100%;
     }
 
     .generateLead-wrapper {
@@ -615,13 +488,11 @@
     .generateLead-right {
         padding: 30px 15px;
     }
-
-    .ChooseUs-sec-content>p {
-        width: 100%;
-    }
-
     .IndustrySolution-wrapper {
         padding: 30px 0px;
+    }
+    .generateLead{
+        margin: 30px 0px ;
     }
 }
 
@@ -709,12 +580,5 @@
         width: 100%;
     }
 
-    .Home-card2-content {
-        flex-basis: 100%;
-    }
-
-    .Home-card2-content figure {
-        width: 11.5%;
-    }
 
 }

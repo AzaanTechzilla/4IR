@@ -9,31 +9,27 @@ import "@/css/home.css";
 import background from "../../public/assets/images/landing/RoundBlue.gif";
 import SecondBannerImg from "../../public/assets/images/second-banner-img.png";
 import H2 from "./Componenets/landing/Typography/H2";
-import H3 from "./Componenets/landing/Typography/H3";
 import { useState, useEffect } from "react";
 import { FaPlay } from "react-icons/fa";
-import HomeCard1 from "./Componenets/webcomponents/Home page Cards/HomeCard1";
 import Data from "./db.json"
 import Para from "./Componenets/landing/Typography/Para";
-import H4 from "./Componenets/landing/Typography/H4";
 import GenerateLeadBox from "./Componenets/webcomponents/GenerateLeadBox/GenerateLeadBox";
-import HomeCard2 from "./Componenets/webcomponents/Home page Cards/HomeCard2";
 import "@/css/widget.css"
-import TeamCard from "./Componenets/webcomponents/Home page Cards/TeamCard";
-import BlogCards from "./Componenets/webcomponents/Home page Cards/BlogCards";
-import { FaArrowRight } from "react-icons/fa";
 import Accordian from "./Componenets/webcomponents/Accordian/Accordian";
 import {
-  Accordion,
-  AccordionBody,
-  AccordionHeader,
-  AccordionItem,
+  Accordion
+
 } from 'reactstrap';
+import { FaArrowRight } from "react-icons/fa";
+
+import Card from "./Componenets/webcomponents/Home page Cards/Card";
+import Chooseus from "./Componenets/webcomponents/Chooseus/Chooseus";
+import CallToAction from "./Componenets/webcomponents/CallToAction/Calltoaction";
 export default function Home() {
   const [isAnimating, setIsAnimating] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [audio, setAudio] = useState(null);
-    const [open, setOpen] = useState(null);
+  const [open, setOpen] = useState(null);
   useEffect(() => {
     if (typeof window !== "undefined") {
       setAudio(new Audio("/assets/landingimage/heather-audio.wav"));
@@ -161,10 +157,17 @@ export default function Home() {
             <div className="fourth-section-content">
               <H2 title="How do you fit into 4IR" className='text-center' />
               <div className="fourth-sec-card">
-
                 {Data.homecard1.map((items, index) => {
                   return (
-                    <HomeCard1 items={items} key={index} />
+                    <>
+                      <Card classname="forth-box" index={index}>
+                        <Card.Image src={items.img} alt="" imgclass="card-img-top" />
+                        <Card.Body cardbody="forth-box-body">
+                          <Card.Title title={items.title} titleclass="forth-box-title" />
+                          <Card.Para para={items.para} paraclass="forth-box-para" />
+                        </Card.Body>
+                      </Card>
+                    </>
                   )
                 })}
               </div>
@@ -187,16 +190,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="ChooseUs-sec">
-        <div className="ChooseUs-wrapper">
-          <div className="container">
-            <div className="ChooseUs-sec-content">
-              <H2 title="Why Choose Us?" className="text-center" />
-              <Para className="text-center" title="Because we're your guide to the future of business. We simplify complex technology, making it accessible and effective for your business. Our team of experts will work with you to identify your unique needs and develop super-charge solutions that drive growth." />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Chooseus />
       <section className="IndustrySolution" >
         <div className="IndustrySolution-wrapper">
           <div className="container">
@@ -205,7 +199,13 @@ export default function Home() {
               {Data.industrysolutionbox.map((items, index) => {
                 return (
                   <>
-                    <HomeCard2 items={items} index={index} />
+                    <Card classname="Home-card2-content" index={index}>
+                      <Card.Image src={items.img} alt="" />
+                      <Card.Body cardbody="Home-card2-body">
+                        <Card.Title title={items.title} titleclass="text-center" />
+                        <Card.Para para={items.para} />
+                      </Card.Body>
+                    </Card>
                   </>
                 )
               })}
@@ -223,7 +223,15 @@ export default function Home() {
             <div className="Team-card">
               {Data.team.map((items, index) => {
                 return (
-                  <TeamCard items={items} key={index} />
+                  <>
+                    <Card classname={items.classname} index={index}>
+                      <Card.Image src={items.img} alt="" />
+                      <Card.Body cardbody="team-member-content">
+                        <Card.Title title={items.name} />
+                        <Card.Para para={items.designation} />
+                      </Card.Body>
+                    </Card>
+                  </>
                 )
               })}
             </div>
@@ -238,7 +246,16 @@ export default function Home() {
               <div className="Blog-parent">
                 {Data.blog.map((items, index) => {
                   return (
-                    <BlogCards items={items} index={index} />
+                    <>
+                      <Card classname="blog-card" index={index}>
+                        <Card.Image src={items.img} alt="" />
+                        <Card.Body cardbody="blog-card-content">
+                          <Card.Title title={items.title} />
+                          <Card.Para para={items.para} />
+                          <Card.Button button="Read More" buttonclass="blogreadmore" icon={<FaArrowRight />} />
+                        </Card.Body>
+                      </Card>
+                    </>
                   )
                 })}
               </div>
@@ -252,20 +269,26 @@ export default function Home() {
           <div className="container">
             <H2 title="Frequently Asked Questions" className="text-center" />
             <div className="accordian-parent">
-            <Accordion open={open} toggle={toggle}  style={{
-    '--bs-accordion-bg': '#090B0C',
-    '--bs-accordion-btn-color': '#fff', 
-  }}>
-            {Data.accordian.map((items, index) => {
-              return (
-                <Accordian items={items} key={index} />
-              )
-            })}
+              <Accordion open={open} toggle={toggle} style={{
+                '--bs-accordion-bg': '#090B0C',
+                '--bs-accordion-btn-color': '#fff',
+                '--bs-accordion-active-bg': '#090B0C',
+                '--bs-accordion-active-color': '#fff',
+                '--bs-accordion-btn-focus-box-shadow':'0px 4px 22.6px 0px #3104707D ',
+                '--bs-accordion-border-color': '#3104707D',
+                '--bs-accordion-border-width': '2px'
+              }}>
+                {Data.accordian.map((items, index) => {
+                  return (
+                    <Accordian items={items} key={index} />
+                  )
+                })}
               </Accordion>
             </div>
           </div>
         </div>
       </section>
+      <CallToAction />
     </>
   );
 }

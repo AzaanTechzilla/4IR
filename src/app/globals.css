@@ -55,6 +55,7 @@ p{
 a{
   text-decoration: none;
   color: var(--white-color);
+  cursor: pointer;
 }
 ul{
   list-style: none;
@@ -86,6 +87,28 @@ ul{
     font-size: 0.8rem;
   }
 }
+@media screen and (max-width: 992px) {
+  .btn{
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1{
+    font-size: 2rem !important;
+  }
+  h2{
+    font-size: 2rem !important;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  .btn{
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+}
 @media screen and (max-width: 576px) {
   h1{
     font-size: 1.6rem !important;
@@ -95,5 +118,9 @@ ul{
   }
   p{
     font-size: 0.7rem;
+  }
+  .btn{
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
   }
 }

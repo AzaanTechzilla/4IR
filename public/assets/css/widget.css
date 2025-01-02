@@ -1,3 +1,82 @@
+.fourth-sec-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.forth-box {
+    flex-basis: 31.1%;
+    cursor: pointer;
+    position: relative;
+}
+
+.forth-box-body {
+    padding: 7px 10px;
+}
+
+.Home-card2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.Home-card2-content {
+    flex-basis: 31%;
+    text-align: center;
+    background-color: var(--background);
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.Home-card2-content::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, rgba(234,164,255,0.5944502801120448) 0%, rgba(234,164,255,0.3563550420168067) 0%, rgba(196,0,255,0.4768032212885154) 55%, rgba(0,21,255,0.11825980392156865) 96%);    left: -3px;
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    z-index: -1;
+    border-radius: 20px;
+
+}
+
+.Home-card2-content:hover {
+    background: linear-gradient(90deg, rgba(234,164,255,0.5944502801120448) 0%, rgba(234,164,255,0.3563550420168067) 0%, rgba(196,0,255,0.4768032212885154) 55%, rgba(0,21,255,0.11825980392156865) 96%);
+    border: none;
+}
+
+
+.Home-card2-content figure {
+    width: 14%;
+    height: auto;
+    justify-self: center;
+}
+
+.Home-card2-content figure img {
+    width: 100%;
+    height: auto;
+}
+.ChooseUs-wrapper {
+    padding: 50px 0px;
+    background-color: var(--primary-color);
+}
+
+.ChooseUs-sec-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ChooseUs-sec-content>p {
+    width: 60%;
+    margin: 20px 0px;
+}
 .Team-content{
     display: flex;
     flex-direction: column;
@@ -124,15 +203,73 @@ padding-left: 10px;
 .accordion{
     background-color: var(--background) ;
 }
+.accordian-item{
+    margin-bottom: 10px ;
+}
   .accordion-body {
-    background-color: #e9ecef;
+    background-color: transparent;
+    color: var(--white-color);
+  }
+  .calltoaction-content{
+    background-image: url(../images/primarybackground.png);
+background-position: center;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 50px 0px;
+border-radius: 20px;
+  }
+  .calltoaction-content-center{
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  @media screen and (max-width: 1200px){
+  
+    .fourth-sec-card {
+        gap: 2rem;
+    }
+
+    .forth-box {
+        flex-basis: 31%;
+    }
+    
   }
 @media screen and (max-width: 992px){
     .blog-card{
         flex-basis: 48%;
     }
+    .forth-box {
+        flex-basis: 47%;
+    }
+    .Home-card2 {
+        gap: 1rem;
+    }
+    .ChooseUs-sec-content>p {
+        width: 80%;
+    }
+
+    .Home-card2-content {
+        flex-basis: 48%;
+    }
+
+    .Home-card2-content figure {
+        width: 13%;
+    }
+    .calltoaction-content-center{
+        width: 80%;
+        gap: 0.8rem;
+    }
 }
 @media screen and (max-width: 768px){
+    
+    .ChooseUs-sec-content>p {
+        width: 100%;
+    }
     .Team-content p{
         width: 100%;
     }
@@ -141,9 +278,20 @@ padding-left: 10px;
     }
     .Team-member1, .Team-member2{
         flex-basis: 100%;
-    }  
+    } 
+    .forth-box {
+        flex-basis: 100%;
+    } 
 }
 @media screen and (max-width: 576px){
+
+    .Home-card2-content {
+        flex-basis: 100%;
+    }
+
+    .Home-card2-content figure {
+        width: 11.5%;
+    }
     .blog-card{
         flex-basis: 100%;
     }
