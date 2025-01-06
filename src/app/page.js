@@ -16,10 +16,7 @@ import Para from "./Componenets/landing/Typography/Para";
 import GenerateLeadBox from "./Componenets/webcomponents/GenerateLeadBox/GenerateLeadBox";
 import "@/css/widget.css"
 import AccordianComponent from "./Componenets/webcomponents/Accordian/AccordianComponent";
-import {
-  Accordion
-
-} from 'reactstrap';
+import { Accordion } from 'reactstrap';
 import { FaArrowRight } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
