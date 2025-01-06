@@ -11,6 +11,9 @@
     position: relative;
     padding: 20px;
 }
+.forth-box-title{
+    margin-bottom: 20px;
+}
 
 .forth-box-body {
     padding: 7px 10px;
@@ -19,6 +22,9 @@
 border: 1.5px solid  #C300FFA3; ;
 border-radius: 20px ;
 transition: all.3s;
+}
+.forth-box-para{
+    font-size: 17px;
 }
 
 .Home-card2 {
@@ -233,7 +239,84 @@ border-radius: 20px;
     align-items: center;
     gap: 1rem;
   }
+  .clientreview-wrapper{
+    padding: 50px 0px ;
+  }
+  .clientreview-head figure{
+width: 20%;
+height: auto;
+  }
+  .clientreview-head figure img{
+width: 100%;
+height: auto;
+  }
+  .clientreview{
+    border: 1.5px solid var(--para-color);
+    padding: 25px 10px;
+    border-radius: 20px;
+  }
+  .star svg{
+    font-size: 20px;
+    color: #FFD700;
 
+  }
+  .clientreview-rating{
+    gap: 0.2rem;
+  }
+  .clientreview-rating p{
+   font-size: 12px;
+  }
+  .banner2-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.banner2-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/damyy.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Adjust the opacity of the background image */
+    z-index: -1;  /* Position the background behind the content */
+    pointer-events: none; /* Allow interactions with child elements */
+}
+.banner2-wrapper {
+    padding: 170px 0px 50px 0px;
+}
+
+.banner2-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner2-body {
+    width: 100%;
+}
+
+.banner2-body .banner2-heading {
+    font-size: 2.8rem !important;
+    margin-bottom: 1rem !important;
+}
+
+.banner2-body p {
+    width: 85%;
+    justify-self: center;
+    color: #D9D9D9;
+}
+
+@media screen and (max-width: 1399px) {
+    .banner2-body p {
+        width: 100%;
+    }
+}
   @media screen and (max-width: 1200px){
   
     .fourth-sec-card {
@@ -243,6 +326,13 @@ border-radius: 20px;
     .forth-box {
         flex-basis: 31%;
     }
+    .banner2-body .banner2-heading {
+        font-size: 2.3rem !important;
+    }
+
+    .banner2-body p {
+        font-size: 15px;
+    }
     
   }
 @media screen and (max-width: 992px){
@@ -251,6 +341,9 @@ border-radius: 20px;
     }
     .forth-box {
         flex-basis: 47%;
+    }
+    .forth-box-para{
+        font-size: 15px;
     }
     .Home-card2 {
         gap: 1rem;
@@ -270,6 +363,20 @@ border-radius: 20px;
         width: 80%;
         gap: 0.8rem;
     }
+    .star svg{
+        font-size: 15px;
+    }
+    .banner2-wrapper {
+        padding: 150px 0px 50px 0px;
+    }
+
+    .banner2-body .banner2-heading {
+        font-size: 1.9rem !important;
+    }
+
+    .banner2-body p {
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 768px){
     
@@ -288,6 +395,20 @@ border-radius: 20px;
     .forth-box {
         flex-basis: 100%;
     } 
+    .clientreview-wrapper{
+        padding: 30px 0px ;
+    }
+    .banner2-wrapper {
+        padding: 123px 0px 50px 0px;
+    }
+
+    .banner2-body .banner2-heading {
+        font-size: 1.6rem !important;
+    }
+
+    .banner2-body p {
+        font-size: 13px;
+    }
 }
 @media screen and (max-width: 576px){
 
@@ -300,6 +421,17 @@ border-radius: 20px;
     }
     .blog-card{
         flex-basis: 100%;
+    }
+    .banner2-wrapper {
+        padding: 100px 0px 30px 0px;
+    }
+
+    .banner2-body .banner2-heading {
+        font-size: 1.4rem !important;
+    }
+
+    .banner2-body p {
+        font-size: 12px;
     }
     
 }

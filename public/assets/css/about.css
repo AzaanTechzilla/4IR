@@ -1,5 +1,5 @@
 .aboutfirst-wrapper{
-    padding: 50px 0px;
+    padding: 150px 0px 50px 0px;
 }
 .aboutfirst-content {
     display: grid;
@@ -88,6 +88,12 @@ border-radius: 15px;
     }
 }
 @media screen and (max-width: 992px) {
+    .aboutfirst-content{
+        gap: 1rem;
+    }
+    .aboutfirst-wrapper{
+        padding: 130px 0px 30px 0px;
+    }
     .aboutbox-content{
         flex-basis: 48%;
     }
@@ -100,7 +106,7 @@ border-radius: 15px;
 }
 @media (max-width: 768px) {
     .aboutfirst-wrapper{
-        padding: 30px 0px;
+        padding: 130px 0px 30px 0px;
     }
     .aboutsecond-content{
         flex-direction: column;
@@ -136,6 +142,9 @@ border-radius: 15px;
     }
 }
 @media screen and (max-width: 576px) {
+    .aboutfirst-wrapper {
+        padding: 90px 0px 30px 0px;
+    }
     .aboutsecond-wrapper{
         padding: 30px 0px ;
     }

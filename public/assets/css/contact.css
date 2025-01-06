@@ -1,0 +1,141 @@
+ .banner2-body p {
+   width: 70%;
+}
+.contactform-wrapper{
+    padding: 50px 0px ;
+}
+.contactform-left-content{
+    background-image: url(../images/contactus_img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contactform-parent{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.contactform-left-content{
+    flex-basis: 30%;
+    padding: 20px;
+    min-height: 460px;
+    border-radius: 20px;
+}
+.contactform-left-content p{
+   color: #fff;
+   margin-bottom: 20px;
+}
+.call , .email , .location {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.call svg, .email svg, .location svg{
+font-size: 25px;
+}
+.call svg{
+    transform: rotate(-80deg);
+}
+
+.contactform-right-content{
+    flex-basis: 70%;
+}
+.contactform-right-content form{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* form starting stylings ------------------------------- */
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+.contactform-right-content form input{
+    margin-right: 20px;
+    min-width: 350px;
+}
+input{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  min-width: 100%;
+  color: white;
+  display:block;
+  border:none;
+  border-bottom:1px solid #ffffff;
+  background-color: var(--background);
+}
+input:focus 		{ outline:none; }
+input::placeholder{
+color: var(--para-color);
+}
+.message input{
+    min-width: 100%;
+}
+.form-select{
+    background-color: var(--background);
+    color: #d3d3d3;
+    border-radius: 1px;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1.5px solid #fff;
+    border-left: none;
+      
+}
+.form-select:focus {
+    border-color: unset;
+    outline: 0;
+    box-shadow: unset;
+}
+@media screen and (min-width: 1400px) {
+    .contactform-left-content{
+        flex-basis: 26%;
+        padding: 20px;
+        min-height: 460px;
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width: 1399px) {
+    .banner2-body p {
+        width: 50% !important;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .contactform-right-content form input{
+        margin-right: 20px;
+        min-width: 300px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .contactform-right-content{
+        text-align: center;
+    }
+    .contactform-right-content form{
+        justify-content: center;
+    }
+    .group label{
+      text-align: start;
+    }
+    .call , .email , .location {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .call svg, .email svg, .location svg{
+    font-size: 21px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .contactform-parent{
+        flex-direction: column;
+    }
+    .contactform-right-content{
+        flex-basis: 20%;
+    }
+    .contactform-right-content form input {
+        min-width: 255px;
+    }
+    .contactform-left-content{
+        min-height: fit-content;
+    }
+}

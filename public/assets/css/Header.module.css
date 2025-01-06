@@ -1,7 +1,21 @@
 /* General styles */
+.sticky {
+    padding: 0.5rem 2rem;
+    transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 .navbarWrapper {
     background-color: transparent;
-    margin: 30px 0px;
+    margin: 15px 0px;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
 }
 
 .navbarContent {

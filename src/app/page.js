@@ -9,7 +9,7 @@ import "@/css/home.css";
 import background from "../../public/assets/images/landing/RoundBlue.gif";
 import SecondBannerImg from "../../public/assets/images/second-banner-img.png";
 import H2 from "./Componenets/landing/Typography/H2";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FaPlay } from "react-icons/fa";
 import Data from "./db.json"
 import Para from "./Componenets/landing/Typography/Para";
@@ -21,19 +21,68 @@ import {
 
 } from 'reactstrap';
 import { FaArrowRight } from "react-icons/fa";
-
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Card from "./Componenets/webcomponents/Home page Cards/Card";
 import Chooseus from "./Componenets/webcomponents/Chooseus/Chooseus";
 import CallToAction from "./Componenets/webcomponents/CallToAction/Calltoaction";
+gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   const [isAnimating, setIsAnimating] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [audio, setAudio] = useState(null);
   const [open, setOpen] = useState(null);
+  const parentRef = useRef(null);
   useEffect(() => {
     if (typeof window !== "undefined") {
       setAudio(new Audio("/assets/landingimage/heather-audio.wav"));
     }
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: parentRef.current,
+        scroller: "body",
+        scrub: 2,
+        pin: true,
+        start: "top 20%", 
+        end: "bottom 10%"
+      }
+    });
+    tl.to(parentRef.current.querySelector(".solutions-box:nth-child(1)"), {
+      y: -500,
+      x: -200,
+      rotate: -20,
+      duration: 1,
+      opacity: 0
+    });
+    tl.to(parentRef.current.querySelector(".solutions-box:nth-child(2)"), {
+      y: -500,
+      x: 200,
+      rotate: 20,
+      duration: 1,
+      opacity: 0
+
+    });
+    tl.to(parentRef.current.querySelector(".solutions-box:nth-child(3)"), {
+      y: -700,
+      x: -200,
+      rotate: -20,
+      duration: 1,
+      opacity: 0
+    });
+    tl.to(parentRef.current.querySelector(".solutions-box:nth-child(4)"), {
+      y: -700,
+      x: 200,
+      rotate: 20,
+      duration: 1,
+      opacity: 0
+    });
+    tl.to(parentRef.current.querySelector(".solutions-box:nth-child(5)"), {
+      y: -700,
+      x: -200,
+      rotate: -20,
+      duration: 1,
+      opacity: 0
+    });
   }, []);
   const toggle = (id) => {
     setOpen((prevOpen) => (prevOpen === id ? null : id));
@@ -190,6 +239,29 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="solutions" ref={parentRef}>
+        <div className="solutions-wrapper">
+          <div className="container">
+            <div className="solutions-content">
+              <H2 className="text-center" title="Our Solutions" />
+              {Data.solutionsbox.map((items, index) => {
+                return (
+                  <Card classname={`solutions-box ${items.class}`}index={index}>
+                    <Card.Image src={items.img} alt={items.title} />
+                    <Card.Body cardbody="solutions-box-card">
+                      <Card.Title title={items.title} />
+                      <Card.Para para={items.para} />
+                    </Card.Body>
+
+                  </Card>
+
+                )
+              })}
+            </div>
+
+          </div>
+        </div>
+      </section>
       <Chooseus />
       <section className="IndustrySolution" >
         <div className="IndustrySolution-wrapper">
@@ -274,7 +346,7 @@ export default function Home() {
                 '--bs-accordion-btn-color': '#fff',
                 '--bs-accordion-active-bg': '#090B0C',
                 '--bs-accordion-active-color': '#fff',
-                '--bs-accordion-btn-focus-box-shadow':'0px 4px 22.6px 0px #3104707D ',
+                '--bs-accordion-btn-focus-box-shadow': '0px 4px 22.6px 0px #3104707D ',
                 '--bs-accordion-border-color': '#fff',
                 '--bs-accordion-border-width': '2px'
               }}>

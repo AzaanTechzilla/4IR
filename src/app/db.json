@@ -95,6 +95,36 @@
             "para": "Revolutionizing the Future AI-powered solutions for diverse sectors, including agriculture, energy, real estate, and government."
         }
     ],
+    "solutionsbox":[
+        {
+            "id":1,
+            "img":"/assets/images/forthsectionimg.png",
+            "class": "solutionbox1",
+            "title": "AI Talk Assist: 1",
+            "para": "Let AI handle your conversations, so you can focus on what matters."
+        },
+        {
+            "id":2,
+            "img":"/assets/images/forthsectionimg.png",
+            "class": "solutionbox2",
+            "title": "AI Talk Assist: 2",
+            "para": "Let AI handle your conversations, so you can focus on what matters."
+        },
+        {
+            "id":3,
+            "img":"/assets/images/forthsectionimg.png",
+            "class": "solutionbox3",
+            "title": "AI Talk Assist: 3",
+            "para": "Let AI handle your conversations, so you can focus on what matters."
+        },
+        {
+            "id":4,
+            "img":"/assets/images/forthsectionimg.png",
+            "class": "solutionbox4",
+            "title": "AI Talk Assist: 4",
+            "para": "Let AI handle your conversations, so you can focus on what matters."
+        }
+    ],
     "team": [
         {
             "id": 1,
@@ -206,5 +236,50 @@
             "title": "How can I get started with AI?",
             "para": "The first step is to assess your business needs and identify potential AI applications. You can consult with our AI experts to develop a tailored AI strategy. We can help you with everything from data preparation and model development to deployment and ongoing maintenance."
         }
+    ],
+    "clientreview":[
+        {
+                "id":1,
+                "title": "Victor Murphy",
+                "img": "/assets/landingimage/Ellipse204.png",
+                "subtitle": "Marketing Specialist",
+                "para": "Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials."
+        },
+        {
+                "id":2,
+                "title": "Victor Murphy",
+                "img": "/assets/landingimage/Ellipse204.png",
+                "subtitle": "Marketing Specialist",
+                "para": "Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials."
+        },
+        {
+                "id":3,
+                "title": "Victor Murphy",
+                "img": "/assets/landingimage/Ellipse204.png",
+                "subtitle": "Marketing Specialist",
+                "para": "Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials."
+        },
+        {
+                "id":4,
+                "title": "Victor Murphy",
+                "subtitle": "Marketing Specialist",
+                "img": "/assets/landingimage/Ellipse204.png",
+                "para": "Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials."
+        },
+        {
+                "id":5,
+                "title": "Victor Murphy",
+                "subtitle": "Marketing Specialist",
+                "img": "/assets/landingimage/Ellipse204.png",
+                "para": "Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials."
+        },
+        {
+                "id":6,
+                "title": "Victor Murphy",
+                "subtitle": "Marketing Specialist",
+                "img": "/assets/landingimage/Ellipse204.png",
+                "para": "Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials."
+        }
     ]
+    
 }
