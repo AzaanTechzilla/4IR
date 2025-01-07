@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
+import "@/css/widget.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

@@ -1,7 +1,7 @@
 'use client'
 import Banner from "@/app/Componenets/webcomponents/Banner/Banner";
 import "@/css/widget.css";
-import "@/css/expert-team.css"
+import "./expert-team.css"
 import Data from "../../db.json";
 import Card from "@/app/Componenets/webcomponents/Home page Cards/Card";
 import H2 from "@/app/Componenets/landing/Typography/H2";

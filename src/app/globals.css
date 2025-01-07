@@ -16,6 +16,7 @@
 body {
   background-color: var(--background);
   color: var(--white-color);
+  overflow-x: hidden;
 }
 h1{
   margin: 0 !important;
@@ -76,6 +77,11 @@ ul{
   background-color: var(--background);
   color: var(--white-color);
 }
+@media screen and (min-width: 1400px) {
+  h5{
+    font-size: 2rem !important;
+  }
+}
 @media screen and (max-width: 1200px) {
   h1{
     font-size: 2.5rem !important;
@@ -83,6 +89,7 @@ ul{
   h2{
     font-size: 2.5rem !important;
   }
+  
   p{
     font-size: 0.8rem;
   }

@@ -1,9 +1,7 @@
 'use client';
 import { useState, useEffect } from "react";
 import Banner from "../Componenets/webcomponents/Banner/Banner";
-import "@/css/widget.css";
-import "@/css/solutions.css";
-import "../globals.css";
+import "./solutions.css";
 import H2 from "../Componenets/landing/Typography/H2";
 import Para from "../Componenets/landing/Typography/Para";
 import H4 from "../Componenets/landing/Typography/H4";

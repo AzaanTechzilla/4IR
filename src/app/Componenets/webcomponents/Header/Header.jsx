@@ -4,7 +4,7 @@ import Link from "next/link";
 import SiteLogo from "../../landing/SiteLogo";
 import { IoIosArrowDown, IoIosMenu } from "react-icons/io";
 import { Offcanvas, OffcanvasHeader, OffcanvasBody } from "reactstrap";
-import styles from "@/css/Header.module.css";
+import styles from "./Header.module.css";
 
 export default function Header() {
     const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);

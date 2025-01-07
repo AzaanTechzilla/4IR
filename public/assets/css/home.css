@@ -147,6 +147,7 @@
 
 .second-section-right {
     flex-basis: 50%;
+    position: relative;
 }
 
 .Demo-video {
@@ -260,7 +261,6 @@
     align-self: center;
     font-size: 68px;
 }
-
 
 .generateLead-wrapper {
     padding: 50px 0px;
@@ -427,7 +427,7 @@ border-radius: 15px;
 
 @media screen and (max-width: 992px) {
     .banner-wrapper {
-        margin: 40px 0px;
+        margin: 140px 0px 40px 0px;
     }
     .solutions-wrapper{
         padding: 140px 0px ;

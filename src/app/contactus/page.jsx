@@ -1,7 +1,7 @@
 'use client'
 import Banner from "../Componenets/webcomponents/Banner/Banner";
 import "@/css/widget.css";
-import "@/css/contact.css"
+import "./contact.css"
 import H3 from "../Componenets/landing/Typography/H3";
 import Para from "../Componenets/landing/Typography/Para";
 import { SlCallEnd } from "react-icons/sl";

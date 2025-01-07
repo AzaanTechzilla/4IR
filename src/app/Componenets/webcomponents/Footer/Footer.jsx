@@ -1,7 +1,7 @@
 'use client'
 import H6 from "../../landing/Typography/H6";
 import Para from "../../landing/Typography/Para";
-import "@/css/footer.css"
+import "./footer.css"
 import Link from "next/link";
 export default function Footer() {
     return (

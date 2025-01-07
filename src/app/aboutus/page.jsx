@@ -4,7 +4,7 @@ import Image from "next/image";
 import H2 from "../Componenets/landing/Typography/H2";
 import Para from "../Componenets/landing/Typography/Para";
 import ForthImage from "../../../public/assets/images/damyy.png";
-import '@/css/about.css';
+import './about.css';
 import H5 from "../Componenets/landing/Typography/H5";
 import Card from "../Componenets/webcomponents/Home page Cards/Card";
 import Data from "../db.json";

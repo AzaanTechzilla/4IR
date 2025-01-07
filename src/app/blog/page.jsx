@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Banner from "../Componenets/webcomponents/Banner/Banner";
 import "@/css/widget.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import "@/css/blog.css"
+import "./blog.css";
 import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
 import Data from "../db.json";
