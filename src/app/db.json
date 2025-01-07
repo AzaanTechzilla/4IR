@@ -280,6 +280,44 @@
                 "img": "/assets/landingimage/Ellipse204.png",
                 "para": "Website is not only visually appealing but also highly responsive. The informative content, from case studies to client testimonials."
         }
+    ],
+    "blogpageslider":[
+        {
+            "id":1,
+            "img":"/assets/images/blog1.png",
+            "title":"Activities Improve Mind",
+            "para": "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs."
+        },
+        {
+            "id":2,
+            "img":"/assets/images/blog2.png",
+            "title":"Activities Improve Mind",
+            "para": "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs."
+        },
+        {
+            "id":3,
+            "img":"/assets/images/blog3.png",
+            "title":"Activities Improve Mind",
+            "para": "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs."
+        },
+        {
+            "id":4,
+            "img":"/assets/images/blog1.png",
+            "title":"Activities Improve Mind",
+            "para": "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs."
+        },
+        {
+            "id":5,
+            "img":"/assets/images/blog1.png",
+            "title":"Activities Improve Mind",
+            "para": "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs."
+        },
+        {
+            "id":6,
+            "img":"/assets/images/blog1.png",
+            "title":"Activities Improve Mind",
+            "para": "This comprehensive suite of payment products offers a fully integrated solution for handling various payment needs."
+        }
     ]
     
 }

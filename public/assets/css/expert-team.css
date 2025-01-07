@@ -1,0 +1,14 @@
+.Team-wrapper{
+    padding: 50px 0px;
+}
+@media screen and (max-width: 1200px) {
+    .Team-wrapper{
+        padding: 40px 0px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .Team-wrapper{
+        padding: 30px 0px;
+    }
+}
+

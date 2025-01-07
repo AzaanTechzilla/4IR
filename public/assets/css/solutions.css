@@ -17,5 +17,8 @@
     margin-top: 50px;
 }
 .solution-left-content{
-    flex-basis: 30%;
+   padding-top: 100vh;
+}
+.solution-right-content{
+   padding-top: 150vh;
 }

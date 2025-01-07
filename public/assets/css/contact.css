@@ -85,6 +85,14 @@ color: var(--para-color);
     outline: 0;
     box-shadow: unset;
 }
+.freedemo-content figure{
+    width: 100%;
+    height: auto;
+}
+.freedemo-content figure img{
+    width: 100%;
+    height: auto;
+}
 @media screen and (min-width: 1400px) {
     .contactform-left-content{
         flex-basis: 26%;
@@ -94,7 +102,7 @@ color: var(--para-color);
     }
 }
 @media screen and (max-width: 1399px) {
-    .banner2-body p {
+    .banner2-para {
         width: 50% !important;
     }
 }
@@ -113,6 +121,9 @@ color: var(--para-color);
     }
     .group label{
       text-align: start;
+    }
+    .banner2-para {
+        width: 90% !important;
     }
     .call , .email , .location {
         display: flex;
@@ -137,5 +148,8 @@ color: var(--para-color);
     }
     .contactform-left-content{
         min-height: fit-content;
+    }
+    .banner2-para {
+        width: 100% !important;
     }
 }
