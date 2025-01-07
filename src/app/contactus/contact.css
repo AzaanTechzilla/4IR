@@ -5,7 +5,7 @@
     padding: 50px 0px ;
 }
 .contactform-left-content{
-    background-image: url(../images/contactus_img.png);
+    background-image: url(/public/assets/images/contactus_img.png);
     background-position: center;
     background-repeat: no-repeat;
 }
