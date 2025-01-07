@@ -80,3 +80,19 @@
 .foresight-content p {
     width: 80%;
  }
+ @media screen and (max-width: 768px) {
+    .blog-slide {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+ }
+ @media screen and (max-width: 576px) {
+    .blog-slide {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+ }
